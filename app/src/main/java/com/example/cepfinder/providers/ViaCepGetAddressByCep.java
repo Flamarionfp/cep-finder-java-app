@@ -8,7 +8,6 @@ import com.example.cepfinder.mappers.ViaCepAddressMapper;
 import com.google.gson.Gson;
 
 public class ViaCepGetAddressByCep implements GetAddressByCepDTO {
-    private static final String VIA_CEP_URL = "https://viacep.com.br/ws/%s/json/";
 
     public Address execute(String postalCode) throws Exception {
         String responseBody = ViaCepRequest.handle(postalCode);
